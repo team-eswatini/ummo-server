@@ -2,43 +2,22 @@
     <div>
         <v-card>
             <newthing :form="service_form" @save="create_service">
-
-                Logo
-
-                <v-text-field
-                        placeholder="logo"
-                        v-model="service_logo"
-                        type="file"
-                ></v-text-field>
+                <file @uploaded="set_logo"/>
             </newthing>
             <v-list two-line>
-                <template v-for="(item, index) in items">
-                    <v-subheader
-                            v-if="item.header"
-                            :key="item.header"
-                    >
-                        {{ item.header }}
-                    </v-subheader>
-
-                    <v-divider
-                            v-else-if="item.divider"
-                            :inset="item.inset"
-                            :key="index"
-                    ></v-divider>
-
+                <template v-for="(item, index) in services">
                     <v-list-tile
-                            v-else
-                            :key="item.title"
+                            :key="item.name"
                             avatar
                             @click=""
                     >
                         <v-list-tile-avatar>
-                            <img :src="item.avatar">
+                            <img :src="item.logo_url">
                         </v-list-tile-avatar>
 
                         <v-list-tile-content>
-                            <v-list-tile-title v-html="item.title"></v-list-tile-title>
-                            <v-list-tile-sub-title v-html="item.subtitle"></v-list-tile-sub-title>
+                            <v-list-tile-title >Title:{{item.name}}</v-list-tile-title>
+                            <v-list-tile-sub-title v-html="details(item)"></v-list-tile-sub-title>
                         </v-list-tile-content>
                     </v-list-tile>
                 </template>
@@ -50,13 +29,14 @@
 
 <script>
     import newthing from './newthing'
-
+    import file from './file'
     export default {
         name: "Services",
-        components: {newthing},
+        components: {newthing,file},
         data() {
             return {
                 service_logo: '',
+                services:[],
                 items: [
                     {header: 'Today'},
                     {
@@ -92,11 +72,49 @@
 
             };
         },
+        created(){
+          this.reload_services()
+        },
         methods: {
-            create_service()
+            create_service(data)
             {
+                const Service = this.$parse.Object.extend("Service");
+                const service = new Service()
+                for(var d in data){
+                   service.set(d,data[d])
+                }
+                service.set("logo_url",this.service_logo)
+                service.set("owner",this.$parse.User.current())
+                try {
+                    service.save()
+                    this.reload_services()
+                }catch (e) {
+                    alert(e)
+                }
+            },
+            details(item){
+              return  `<span class='text--primary'>Created on ${item.createdAt}</span>`
+            },
+            set_logo(url){
+                this.service_logo = url
+            },
+            async reload_services(){
+                const Services = this.$parse.Object.extend("Service");
+                const query = new this.$parse.Query(Services);
+                query.equalTo("owner", this.$parse.User.current());
+                try{
+                    const results = await query.find();
+                    this.services = [];
+                    for(var i =0; i<results.length; i++){
+                        this.services.push(results[i].attributes)
+                    }
+                    console.log(results)
+                }catch (e) {
+                    console.log(e)
+                }
 
             }
+
         }
     };
 </script>

@@ -1,6 +1,8 @@
 <template>
-  <v-app id="keep">
+  <v-app id="App">
+<Login v-if="!is_logged_in"/>
     <v-navigation-drawer
+            v-else
             v-model="drawer"
             fixed
             clipped
@@ -39,6 +41,17 @@
               prepend-inner-icon="search"
       ></v-text-field>
       <v-spacer></v-spacer>
+      <v-btn
+              relative
+              dark
+              top
+              left
+              id="btn"
+              color="pink"
+              @click="logout"
+      >
+        logout
+      </v-btn>
     </v-toolbar>
     <v-content>
           <Services/>
@@ -48,8 +61,9 @@
 
 <script>
     import Services from "./components/Services";
+    import Login from './components/login'
     export default {
-        components: {Services},
+        components: {Services,Login},
         data: () => ({
             title:'Create',
             components:{Services},
@@ -61,6 +75,17 @@
         }),
         props: {
             source: String
+        },
+        computed:{
+          is_logged_in(){
+              return !!this.$parse.User.current();
+          }
+        },
+        methods:{
+            logout(){
+                this.$parse.User.logOut()
+                window.location = window.location
+            }
         }
     }
 </script>
@@ -69,4 +94,7 @@
   #keep
     .v-navigation-drawer__border
       display: none
+  #btn
+    border-radius: 20px
+
 </style>

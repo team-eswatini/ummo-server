@@ -15,6 +15,7 @@ const api = new ParseServer({
     masterKey, // Keep this key secret!
     serverURL// Don't forget to change to https if needed
 });
+app.use(express.static('ummo-web/dist/'))
 
 
 // Serve the Parse API on the /parse URL prefix
