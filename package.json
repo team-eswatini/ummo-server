@@ -1,0 +1,23 @@
+{
+  "name": "ummo-server",
+  "version": "1.0.0",
+  "description": "To limit conflicts * [ ] Pull Master * [ ] branch from master * [ ] work on your feature * [ ] commit on you feature * [ ] make a pull request",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-eswatini/ummo-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/team-eswatini/ummo-server/issues"
+  },
+  "homepage": "https://github.com/team-eswatini/ummo-server#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "parse-server": "^3.0.0"
+  }
+}
