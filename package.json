@@ -4,6 +4,8 @@
   "description": "To limit conflicts * [ ] Pull Master * [ ] branch from master * [ ] work on your feature * [ ] commit on you feature * [ ] make a pull request",
   "main": "index.js",
   "scripts": {
+    "start":"node index.js",
+    "dev":"PORT=3000 api_prefix=/api databaseURI=mongodb://localhost:27017/ummo-dev cloud=cloud/main.js appId=ummo masterKey=VeryVerySecretKey node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
