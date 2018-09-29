@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/team-eswatini/ummo-server/issues"
   },
-  "homepage": "https://github.com/team-eswatini/ummo-server#readme"
+  "homepage": "https://github.com/team-eswatini/ummo-server#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "parse-server": "^3.0.0"
+  }
 }
