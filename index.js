@@ -2,7 +2,6 @@ const express = require('express');
 const ParseServer = require('parse-server').ParseServer;
 const app = express();
 
-console.log(process.env)
 
 const {PORT,api_prefix ,databaseURI ,cloud ,appId ,masterKey} = process.env
 
