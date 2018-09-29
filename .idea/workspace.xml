@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1610090-1721-499e-b332-0d6dec83daae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ummo-web/src/components/login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ummo-web/src/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ummo-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ummo-web/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ummo-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ummo-web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ummo-web/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ummo-web/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ummo-web/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/ummo-web/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ummo-web/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/ummo-web/src/router.js" afterDir="false" />
-    </list>
+    <list default="true" id="a1610090-1721-499e-b332-0d6dec83daae" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -49,14 +39,14 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="249" />
+          <entry key="js" value="250" />
           <entry key="vue" value="1918" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="249" />
+          <entry key="JavaScript" value="250" />
           <entry key="Vue.js" value="1918" />
         </counts>
       </usages-collector>
@@ -64,20 +54,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="345">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ummo-web/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="165">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -89,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/ummo-web/src/components/login.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-168">
-              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -98,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/ummo-web/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1076">
-              <caret line="81" column="11" lean-forward="true" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+              <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
               <folding>
                 <element signature="e#1369#1414#0" expanded="true" />
               </folding>
@@ -115,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -124,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/ummo-web/src/router.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -133,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/ummo-web/src/components/Services.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
               <folding>
                 <element signature="e#1427#1460#0" expanded="true" />
                 <element signature="e#47#54#1" expanded="true" />
@@ -148,7 +138,7 @@
         <entry file="file://$PROJECT_DIR$/ummo-web/src/components/file.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -180,12 +170,12 @@
       <list>
         <option value="$PROJECT_DIR$/ummo-web/src/router.js" />
         <option value="$PROJECT_DIR$/ummo-web/src/parse.js" />
-        <option value="$PROJECT_DIR$/ummo-web/src/main.js" />
         <option value="$PROJECT_DIR$/ummo-web/src/App.vue" />
         <option value="$PROJECT_DIR$/ummo-web/src/components/login.vue" />
         <option value="$PROJECT_DIR$/ummo-web/src/components/file.vue" />
         <option value="$PROJECT_DIR$/ummo-web/src/components/Services.vue" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/ummo-web/src/main.js" />
       </list>
     </option>
   </component>
@@ -290,18 +280,18 @@
       <workItem from="1538184442672" duration="7957000" />
       <workItem from="1538195115591" duration="1568000" />
       <workItem from="1538223653447" duration="1521000" />
-      <workItem from="1538230790032" duration="16283000" />
+      <workItem from="1538230790032" duration="16770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27658000" />
+    <option name="totallyTimeSpent" value="28145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32974002" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32974002" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" weight="0.32974002" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -316,7 +306,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Missing In Actions" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32898173" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32898173" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -378,17 +368,7 @@
     <entry file="file://$PROJECT_DIR$/ummo-web/src/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ummo-web/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -405,7 +385,7 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -419,7 +399,7 @@
     <entry file="file://$PROJECT_DIR$/ummo-web/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1076">
-          <caret line="81" column="11" lean-forward="true" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+          <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
           <folding>
             <element signature="e#1369#1414#0" expanded="true" />
           </folding>
@@ -429,21 +409,21 @@
     <entry file="file://$PROJECT_DIR$/ummo-web/src/components/login.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-168">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ummo-web/src/components/file.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ummo-web/src/components/Services.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
           <folding>
             <element signature="e#1427#1460#0" expanded="true" />
             <element signature="e#47#54#1" expanded="true" />
@@ -455,8 +435,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="345">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ummo-web/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

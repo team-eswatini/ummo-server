@@ -9,9 +9,9 @@ const Parse = require('parse')
 Parse.initialize("ummo");
 const server_url = process.env.NODE_ENV === 'production' ?
     `${window.location}`
-    : 'http://localhost:3000'
+    : 'http://localhost:3000/'
 
-Parse.serverURL = `${server_url}/api`
+Parse.serverURL = `${server_url}api`
 
 
 
