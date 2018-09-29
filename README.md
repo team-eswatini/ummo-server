@@ -1,5 +1,5 @@
 # ummo-server
-** We never push to master **
+# We never push to master 
 To limit conflicts
 * [ ] Pull Master
 * [ ] branch from master
@@ -9,4 +9,4 @@ To limit conflicts
 
 if you want features that are on master you can merge master into your feature branch
 
-** We never push to master **
+# We never push to master 
