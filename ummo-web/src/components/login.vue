@@ -44,7 +44,7 @@
                             <v-text-field class="login-input" label="Email" v-model="user.email"></v-text-field>
                             <v-text-field class="login-input" label="Name" v-model="user.name"></v-text-field>
                             <v-text-field class="login-input" label="Surname" v-model="user.surname"></v-text-field>
-                            <v-text-field class="login-input" type="password" label="Password" v-model="user.password"></v-text-field>
+                            <v-text-field class="login-input" type="password"  label="Password" v-model="user.password"></v-text-field>
                         </v-card-text>
                         <v-card-actions>
                             <v-btn flat color="orange" @click="signup">Signup</v-btn>
@@ -100,15 +100,20 @@ export default {
         },
         async signup() {
             const user = new this.$parse.User();
-            for(var i of Object.keys(this.user)){
-                  user.set(i,this.user[i])
+            if(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/.test(this.user.password)){
+                for(var i of Object.keys(this.user)){
+                    user.set(i,this.user[i])
+                }
+
+                user.set('username',this.user.email)
+                try{
+                    await user.signUp()
+                }catch (e) {
+                    alert("Error: " + e.code + " " + e.message);
+                }
             }
-            user.set('username',this.user.email)
-            try{
-                await user.signUp()
-            }catch (e) {
-                alert("Error: " + e.code + " " + e.message);
-            }
+            return alert("PLease use a stronger password")
+
         }
     }
 }
